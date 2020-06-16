@@ -75,4 +75,7 @@ console.log("a + b");
 let c = "5";
 console.log(a + b + c);
 
+let autre_variable = ("fin de cours du jour");
+console.log(autre_variable);
+
 
