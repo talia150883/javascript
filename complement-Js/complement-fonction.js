@@ -86,15 +86,22 @@ let tiret ='_';
 console.log(`tiret: ${tiret.repeat(50)}`);
 
 
+
+
 //2. Inverser une chaîne de caractères (sans supprimer l'originale).
-let tableau = [1, 2, 3, 4, 5];
-tableau.reverse();
-console.log(tableau);
-//exemple sabrine
-//let maChaine = 'je suis la plus belle';
-//let rev = maChaine.spilt( separator'').reverse().join('');
-//console.log(maChaine);
-//console.log(rev);
+//let tableau = [1, 2, 3, 4, 5];
+//tableau.reverse();
+//console.log(tableau);
+
+let tata = 'talia doit travailler';
+let lala = tata.split("").reverse().join("");
+console.log(lala);
+
+
+
+
+
+
 
 
 //3. Remplacer tous les caractères d'une chaîne par une‘*’
@@ -104,10 +111,9 @@ console.log(maisonné);
 
 
 //4 Remplacer toutes les occurrences d'une lettre par une autre dans une chaîne de caractères.
-//  split ou join
+
 couleurs = 'rouge, jaune, rouge,vert';
-nvllcouleur = couleurs.replace('r','t');
-console.log(couleurs);
+nvllcouleur = couleurs.split('r').join('t');
 console.log(nvllcouleur);
 
 
@@ -115,7 +121,7 @@ console.log(nvllcouleur);
 //5. Supprimer toutes les occurrences d'une lettre dans une chaîne de caractères.
 //last index
 voyage = 'je part en vacance en italie la plus belle des ville';
-voyage2 = voyage.replace('e','');
+voyage2 = voyage.split('e').join('');
 console.log(voyage2);
 
 
@@ -123,15 +129,16 @@ console.log(voyage2);
 
 
 //6. Afficher la présence d'une lettre dans une chaîne (si oui,en afficher le nombre (quantité,si non,afficher "absent").
-// index of
+
+
 
 
 //7. Compter le nombre d'occurrence de chaque lettre dans une chaine
-
 let voyage3 = 'je part en italie en vacance';
 let lettreE ='e';
-let indexoffirst = voyage3.indexOf();
-console.log();
+let indexoffirst = voyage3.indexOf('lettreE');
+console.log(indexoffirst);
+
 
 
 
@@ -142,19 +149,19 @@ console.log();
 
 
 
+
+
+
+
 //9. Découper une chaîne de caractères en mots avec l'espace comme séparateur et les compter.
 
-
-
-let fruits ="j'aime les pommes et les poires";
-let splitfruits2 = fruits.split('');
-console.log(splitfruits2);
+let fruits ="j'aime, les, pommes ,et, les, poires";
+console.log(fruits.split(","));
 console.log(fruits.length);
 
 
-//let fruits2= fruits.split('');
-//console.log(fruits2);
-//console.log(fruits);
+
+
 
 
 
